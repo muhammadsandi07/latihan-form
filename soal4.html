@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From-pendaftaran</title>
+  </head>
+  <body>
+    <form style="text-align: center; margin-block: 120px">
+      <h1>Form Pendaftaran</h1>
+      <label for="nama">nama:</label>
+      <input type="text" name="nama" id="nama" style="margin-bottom: 12px" ; />
+      <br />
+      <label for="asal-sekolah">asal sekolah:</label>
+      <input
+        type="text"
+        name="asal-sekolah"
+        id="asal-sekolah"
+        style="margin-bottom: 12px"
+        ;
+      />
+      <br />
+      <label for="jarak">jarak dari rumah</label>
+      <input type="number" id="jarak" min="1" placeholder="km" />
+      <br />
+      <label>gender :</label>
+      <input
+        type="radio"
+        name="gender"
+        id="pria"
+        value="pria"
+        style="margin-bottom: 12px"
+      />
+      <label for="pria">pria</label>
+      <input
+        type="radio"
+        id="wanita"
+        name="gender"
+        style="margin-bottom: 12px"
+      />
+      <label for="wanita">wanita</label>
+      <br />
+      <label>ekstrakulikuler:</label>
+      <input
+        type="checkbox"
+        name="ekstrakulikuler"
+        id="basket"
+        value="basket"
+      /><label for="basket">otomotif</label>
+      <input
+        type="checkbox"
+        name="ekstrakulikuler"
+        id="senam"
+        value="senam"
+      /><label for="senam">Hiking</label>
+      <br />
+      <label for="jurusan">jurusan: </label>
+      <select name="jurusan" id="jurusan">
+        <option hidden>pilih salah satu</option>
+        <option value="otomotif">otomotif</option>
+        <option value="teknik-komputer-jaringan">
+          teknik komputer jaringan
+        </option>
+        <option value="multimedia">multimedia</option>
+      </select>
+      <br />
+      <textarea name="alasa" id="alasan" cols="50" rows="2" maxlength="50">
+alasan masuk ke sekolah ini </textarea
+      ><br />
+      <button style="padding-inline: 24px; padding-block: 8px; width: 18%">
+        <img src="images/upload-solid.svg" alt="submit" width="10px" />
+        <span>submit</span>
+      </button>
+    </form>
+  </body>
+</html>
